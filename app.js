@@ -45,7 +45,6 @@ function insertData(device, code, time, home){
 	});
 }
 
-var server = app.listen(8081, function () {
-   var port = server.address().port; 
-   console.log("Server is running on port %s", port);
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
 });
