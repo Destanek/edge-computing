@@ -1,10 +1,20 @@
-var http = require('http');
-var fs = require('fs');
 var express = require('express'),
-   	app = express(),
+	app = express(),
 	bodyParser = require('body-parser'),
 	path = require("path");
+
+var http = require('http');
+
 var mysql = require('mysql');
+var con = mysql.createConnection({
+   host: "ja-cdbr-azure-west-a.cloudapp.net",
+   user: "b3039e4b16716a",
+   password: "64e1354d",
+   database: "edge"
+});
+
+var fs = require('fs');
+var obj;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -25,22 +35,17 @@ app.post('/', function(req, res){
 		res.send("Message : " + obj.data[device][code]);
 	});
 
-	//insertData(device, code, time, home);
+	insertData(device, code, time, home);
 });
 
-// var server = http.createServer(function(request, response) {
+function insertData(device, code, time, home){
+	var sql = "INSERT INTO MainLog (Device, Code, Time, Home) VALUES ('" + device + "','" + code + "','" + time + "','" + home + "')";
+	con.query(sql, function(err, result){
+		if(err) throw err;
+	});
+}
 
-//     response.writeHead(200, {"Content-Type": "text/plain"});
-//     response.end("Hello Azure!");
-
-// });
-
-var server = app.listen(1337, function () {
-  var port = server.address().port; 
-  console.log("Server is running on port %s", port);
+var server = app.listen(8081, function () {
+   var port = server.address().port; 
+   console.log("Server is running on port %s", port);
 });
-
-// var port = process.env.PORT || 1337;
-// server.listen(port);
-
-//console.log("Server running at http://localhost:%d", port);
