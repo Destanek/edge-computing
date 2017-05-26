@@ -44,10 +44,8 @@ function insertData(device, code, time, home){
 		if(err) throw err;
 	});
 }
-app.listen = function listen() {
-    var server = http.createServer(this);
-    return server.listen.apply(server, arguments);
-}
+
+app.listen();
 //var server = app.listen(8081, function () {
 //   var port = server.address().port; 
 //   console.log("Server is running on port %s", port);
