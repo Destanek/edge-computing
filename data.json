@@ -1,0 +1,94 @@
+{
+  "data": {
+    "CoffeeModel01": {
+      "000": "Nothing",
+      "001": "Coffee bean is empty, please refill",
+      "010": "Preparing Coffee bean... please wait",
+      "011": "Please press the power button to reset the Coffee Maker",
+      "100": "Coffee marker is ready. Enjoy your drink!!",
+      "101": "Out of water, please refill",
+      "110": "Boiling the water... please wait",
+      "111": "Something wrong with the Coffee Maker, Please contact technical support."
+    },
+    "CoffeeModel02": {
+      "000": "Nothing",
+      "001": "Out of water, please refill",
+      "010": "Coffee bean is empty, please refill",
+      "011": "Preparing Coffee bean... please wait",
+      "100": "Coffee marker is ready. Enjoy your drink!!",
+      "101": "Boiling the water... please wait",
+      "110": "Please press the power button to reset the Coffee Maker.",
+      "111": "Something wrong with the Coffee Maker, Please contact technical support."
+    },
+    "DryingMachine01": {
+      "000": "Nothing",
+      "001": "Drying Machine is not ready",
+      "010": "Preparing...",
+      "011": "Too much dust, please cleaning me",
+      "100": "Drying Machine is ready",
+      "101": "Drying...",
+      "110": "Finished Drying",
+      "111": "Something wrong with the Drying Machine, Please contact technical support."
+    },
+    "MicrowaveModel01": {
+      "000": "Nothing",
+      "001": "Cover is open",
+      "010": "Warming up food",
+      "011": "Too many food",
+      "100": "Power on",
+      "101": "Well done, Ready to serves",
+      "110": "Locked",
+      "111": "Something wrong with the Microwave, Please contact technical support"
+    },
+    "OvensModel01": {
+      "000": "Nothing",
+      "001": "Not ready, please wait.",
+      "010": "Warm mode",
+      "011": "Increasing temperature, be careful.",
+      "100": "Power on",
+      "101": "Ready for work",
+      "110": "Baking..",
+      "111": "Something wrong with the Oven, Please contact technical support."
+    },
+    "Refrigerator01": {
+      "000": "Nothing",
+      "001": "Too much frost, Please push button to defrost",
+      "010": "Turbo Cooling Mode",
+      "011": "Run out of food",
+      "100": "Everything is Okay",
+      "101": "Button Panel is locked",
+      "110": "Food is going to expires",
+      "111": "Something wrong with the Refrigerator, Please contact technical support."
+    },
+    "RiceCooker01": {
+      "000": "Nothing",
+      "001": "Not ready, please wait",
+      "010": "Warming..",
+      "011": "Need for water for cooking.",
+      "100": "Cooking",
+      "101": "Ready for work",
+      "110": "Please close the lid of Rice Cooker.",
+      "111": "Something wrong with the Rice Cooker, Please contact technical support."
+    },
+    "Television01": {
+      "000": "Nothing",
+      "001": "No signal from all source",
+      "010": "Power off",
+      "011": "No signal from cable",
+      "100": "Power on",
+      "101": "Saving mode turned on",
+      "110": "No signal from HDMI",
+      "111": "Something wrong with the Television, Please contact technical support."
+    },
+    "WashingMachine01": {
+      "000": "Nothing",
+      "001": "Can't fill water",
+      "010": "Drying..",
+      "011": "Finished washing",
+      "100": "Filler water to the machine",
+      "101": "Ready for work",
+      "110": "Spinning",
+      "111": "Something wrong with the Washing Machine, Please contact technical support."
+    }
+  }
+}
