@@ -16,6 +16,7 @@ var con = mysql.createConnection({
 var fs = require('fs');
 var obj;
 
+app.set('port', process.env.PORT || 8081);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'www')));
