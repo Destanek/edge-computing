@@ -28,14 +28,19 @@ app.post('/', function(req, res){
 	//insertData(device, code, time, home);
 });
 
-var server = http.createServer(function(request, response) {
+// var server = http.createServer(function(request, response) {
 
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello Azure!");
+//     response.writeHead(200, {"Content-Type": "text/plain"});
+//     response.end("Hello Azure!");
 
+// });
+
+var server = app.listen(1337, function () {
+  var port = server.address().port; 
+  console.log("Server is running on port %s", port);
 });
 
-var port = process.env.PORT || 1337;
-server.listen(port);
+// var port = process.env.PORT || 1337;
+// server.listen(port);
 
-console.log("Server running at http://localhost:%d", port);
+//console.log("Server running at http://localhost:%d", port);
