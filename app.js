@@ -1,6 +1,9 @@
 var http = require('http');
 var fs = require('fs');
-var express = require('express');
+var express = require('express'),
+    app = express(),
+	bodyParser = require('body-parser'),
+	path = require("path");
 
 var server = http.createServer(function(request, response) {
 
