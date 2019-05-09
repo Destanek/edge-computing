@@ -7,10 +7,10 @@ var http = require('http');
 
 var mysql = require('mysql');
 var con = mysql.createConnection({
-   host: "ja-cdbr-azure-west-a.cloudapp.net",
-   user: "b3039e4b16716a",
-   password: "64e1354d",
-   database: "edge"
+   host: "---",
+   user: "---",
+   password: "---",
+   database: "---"
 });
 
 var fs = require('fs');
